@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+  var gender,military;
+  gender = (prompt("성별?(M/F) :"));
+  document.write("성별"+gender+"<br>");
+	if(gender == "M"|| gender == "n"){
+		military(prompt("병역필?(Y/N) : "));
+		document.write("병역필"+military+"<br>");
+		if(military == "Y" || military == "y"){
+			division = "예비역";
+	    }else{ division = "병역준비역";
+		}
+	}else
+		{division = "병역면제여성";
+		}
+	document.write("구분 : "+division+"<br>");
+  </script>
+ </body>
+</html>

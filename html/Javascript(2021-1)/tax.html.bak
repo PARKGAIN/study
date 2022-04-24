@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+  var price,tax,duty,vat,special;
+  special = 0;
+  price = parseInt(prompt("핸드백 가격(원)은?"));
+  vat = price*0.1;
+  if(price<=2000000){
+  </script>
+ </body>
+</html>

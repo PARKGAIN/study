@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+  var n =0, score, sum = 0, ave;
+  while(n <5) {
+	  n = n+1;
+	  score = parseInt(prompt(n+"번째 학생 성적:"));
+	  document.write(n+"번째 학생 성적:"+score+"<br>");
+	  sum =sum +score;
+	  }
+	  ave = sum /n;
+	  document.write("총점 : "+sum+"<br>");
+	  document.write("평균 : "+ave+"<br>");
+  </script>
+ </body>
+</html>

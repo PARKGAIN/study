@@ -1,0 +1,8 @@
+val writeButton = findViewById<ImageView>(R.id.writeBtn)
+        writeButton.setOnClickListener {
+            val mDialogView = LayoutInflater.from(this).inflate(R.layout.custom_dialog, null)
+            val mBuilder =AlertDialog.Builder(this)
+                .setView(mDialogView)
+                .setTitle("운동 메모 다이얼로그")
+            
+            mBuilder.show()

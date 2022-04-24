@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+  var a = [67,54,86,32,21,18,29,45];
+  var i,j,minindex,temp;
+  document.write("&nbsp;&nbsp;&nbsp;수행전:");
+  for(i=0; i<a.length;i++) { //정렬 전 배열 출력
+	  document.write(a[i]+"&nbsp;&nbsp;&nbsp;");
+	  }
+  for(i=0; i<(a.length-1);i++) {  //기준 원소의 첨자
+	  minindex = i;
+	  for(i=j; j<a.length; j++) {  
+		  if(a[minindex]>a[j]) {
+			  minindex = j;
+			  }
+			 }
+			temp =a[minindex];
+			a[minindex]=a[i];
+			a[i]= temp;
+			}
+		document.write("<p>");
+        document.write("&nbsp;&nbsp;&nbsp;수행후: ");
+		for(i=0; i<a.length; i++) {
+			document.write(a[i]+"&nbsp;&nbsp;&nbsp;");
+			}
+  </script>
+ </body>
+</html>

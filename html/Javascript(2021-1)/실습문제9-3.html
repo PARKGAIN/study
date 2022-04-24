@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <script>
+  var f0, f1, fn, i;
+  f0 = 1;
+  f1 = 1;
+  document.write(f0+"<br>");
+  document.write(f1+"<br>");
+  for(i=2; i<=20; i++) {
+	  fn = f0+f1;           //앞의 두 값을 더해서 다음 항의 값을 계산
+	  document.write(fn+"<br>");
+	  f0 = f1;
+	  f1 = fn;
+	  }
+  </script>
+ </body>
+</html>

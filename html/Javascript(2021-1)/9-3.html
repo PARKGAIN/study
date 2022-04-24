@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>for문 : 작은 수에서 큰 수까지의 모든 정수의 합</title>
+ </head>
+ <body>
+  <script>
+  var i,min,max,temp,sum;
+  sum = 0;
+  min = parseInt(prompt("첫번째 정수 : "));
+  max = parseInt(prompt("두번째 정수 : "));
+  document.write(min+"부터"+max+"까지의 합은 ");
+  if(min > max) {
+	  temp = min;
+	  min = max;
+	  max = temp;
+ }
+ for(i=min; i<=max; i++) {
+	 sum =sum + i;
+ }
+ document.write(sum+"입니다.");
+  </script>
+ </body>
+</html>

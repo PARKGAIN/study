@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>배열 : 성적 총점과 평균 출력</title>
+ </head>
+ <body>
+  <script>
+  var score =[98,75,86,94,87,92,68,80,79,97];
+  var i,tot, ave;
+  tot = 0;
+  document.write("입력 데이터: ");
+  for(i=0; i<10; i++) {
+	  document.write(score[i]+"  ");
+	  }
+  for(i=0;i<10; i++) {
+	  tot = tot+ score[i];
+	  }
+	ave = tot/10;
+	document.write("<br>총점 : "+tot);
+	document.write("<br>평균 : "+ave);
+  </script>
+ </body>
+</html>

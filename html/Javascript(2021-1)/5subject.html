@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>5과목 성적을 입력받아 출력</title>
+ </head>
+ <body>
+  <script>
+  var score = 0, total =0, count = 1;
+  do
+  {
+	  score = parseInt(prompt(count+ "번째 과목입력"));
+	  if(0 <= score && score <=100)
+	  {total = total + score;
+	  	document.write(count+ "번째 성적 : "+ score+"<BR>" );
+		count = count+1;
+  }else
+  {
+	  document.write("유효한 성적이 아닙니다.<br>");
+	  }
+
+  }while(count <= 5)
+  document.write("총점 : "+total+"<br>");
+  document.write("평균 : "+total/5+"<br>");
+  </script>
+ </body>
+</html>
