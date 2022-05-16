@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<style type="text/css">
+	* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-weight: bold;
+	}
+	.wrap{
+		margin: 0px auto;
+		width: 1000px;
+	}
+	#header,#footer {
+		width: 1000px;
+		height: 100px;
+		border: 1px solid red;
+	}
+	#footer {
+		line-height: 100px;
+		text-align: center;
+		margin-top: 6px;
+	}
+	#gnb {
+		margin-top: 10px;
+		margin-left: 5px;
+	}
+	#header{
+		position:relative;
+		margin-bottom: 6px;
+	}
+	#lnb{
+		top: 57px;
+		left: 614px;
+		position: absolute;
+	}
+	a{
+		text-decoration: none;
+		padding: 10px;
+	}
+	li,ul {
+		list-style: none;
+	}
+	ul {
+		overflow:hidden;
+	}
+	li{
+		float:left;
+		border: 1px dashed red;
+		padding: 5px;
+	}
+	#gnb>ul>li:first-child{
+		border-radius: 10px 0px 0px 10px;
+	}
+	#gnb>ul>li:last-child{
+		border-radius: 0px 10px 10px 0px;
+	}
+	#lnb>ul>li:first-child{
+		border-radius: 10px 0px 0px 10px;
+	}
+	#lnb>ul>li:last-child{
+		border-radius: 0px 10px 10px 0px;
+	}
+	#content{
+		overflow:hidden;
+	}
+	#section {
+		border: 1px solid red;
+		height:600px;
+		width: 794px;
+		margin-right: 6px;
+		float: left;
+		padding: 10px;
+	}
+	#aside {
+		border: 1px solid red;
+		height:600px;
+		width: 200px;
+		float: left;
+		padding: 10px;
+	} 
+</style>
+</head>
+<body>
+<div class= wrap>
+	<div id="header">
+		<div id="gnb">
+			<ul>
+				<li><a href="#">gnb01</a></li>
+				<li><a href="#">gnb02</a></li>
+				<li><a href="#">gnb03</a></li>
+				<li><a href="#">gnb04</a></li>
+				<li><a href="#">gnb05</a></li>
+			</ul>
+		</div>
+		<div id="lnb">
+			<ul>
+				<li><a href="#">lnb01</a></li>
+				<li><a href="#">lnb02</a></li>
+				<li><a href="#">lnb03</a></li>
+				<li><a href="#">lnb04</a></li>
+				<li><a href="#">lnb05</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="content">
+		<div id="section">It is a professional display space in which
+			exhibitions under diverse subjects including the cultural contents
+			are held. Such exhibitions include the ARTTOON ART, Exhibition for
+			100 Modern Cartoonists of Korea, and SF Mania Exhibition.
+		</div>
+		<div id="aside">It is equipped with a stop-motion animation
+			experience space and experience display room in which it is possible
+			to create an animation video clip of one’s own by creating a
+			character in clay and taking photos with a camera.
+		</div>
+	</div>
+	<footer id="footer">
+		<div id="office">office information</div>
+	</footer>
+</div>
+</body>
+</html>
